@@ -7,6 +7,11 @@ body {
   font-family: Arial;
 }
 
+.container {
+  display: flex;
+  gap: 20px;
+}
+
 .calculator {
   background: white;
   padding: 20px;
@@ -38,15 +43,38 @@ button {
   border-radius: 5px;
 }
 
-button:hover {
-  background: #ccc;
+.operator {
+  background: orange;
+  color: white;
 }
 
 .equal {
-  background: #4CAF50;
+  background: green;
+  color: white;
+}
+
+.clear {
+  background: red;
   color: white;
 }
 
 .zero {
   grid-column: span 2;
 }
+
+.history {
+  background: white;
+  padding: 15px;
+  width: 200px;
+  height: 300px;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.history h3 {
+  margin-top: 0;
+}
+
+.history-item {
+  font-size: 14
